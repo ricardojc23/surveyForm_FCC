@@ -1,13 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Sarabun&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>New client form</title>
+  </head>
+  <body>
+    <div class="hero">
+        <img src="./background1.jpg" alt="decorative image">
+    </div>
+    <header>
+        <h1 id="title">New Client Form</h1>
+        <p id="description">Welcome aboard, we're thrilled to have you with us and we would like to know a little bit better. Please help us filling this form with some information about you and your background. Then, we will walk you through the next steps.</p>
+    </header>
+    <div class="content">
+        <form action="#" id="survey-form">
+            <div class="form_question">
+                <label id="name-label" class="field-label" for="name">First name:</label>
+                <input type="text" id="name" class="field" required="required" placeholder="Richard"/>
+            </div>
+            <div class="form_question">
+                <label id="last_name-label" class="field-label" for="last_name">Last name:</label>
+                <input type="text" id="last_name" class="field" required="required" placeholder="Murgas"/>
+            </div>
+            <div class="form_question">
+                <label id="email-label" class="field-label" for="email">Email:</label>
+                <input type="email" id="email" class="field" placeholder="someone@example.com" required="required"/>
+            </div>
+            <div class="form_question">
+                <label id="number-label" class="field-label" for="number">Age:</label>
+                <input type="number" id="number" class="field" placeholder="35" min="15" max="85">
+            </div>
+            <div class="form_question">
+                <label for="dropdown" class="field-label" id="fav_car-label">Choose your favorite car:</label>
+                <select name="fav_car" id="dropdown">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </select>
+            </div>
+            <div class="form_question">
+                <label class="field-label gender-label" >Gender:</label>
+                <span>
+                    <input type="radio" id="male" name="name" value="Male">
+                    <label for="male">Male</label>
+                </span>
+                <span>
+                    <input type="radio" id="female" name="name" value="Female">
+                    <label for="female">Female</label>
+                </span>
+                <span>
+                    <input type="radio" id="other" name="name" value="Other">
+                    <label for="other">Other</label>
+                </span>
+            </div>
+            <div class="form_question">
+                <label class="field-label fav_color-label" >Favorite colors:</label>
+                    <span>
+                        <input type="checkbox" id="white" name="white" value="White">
+                        <label for="white">White</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="black" name="black" value="Black">
+                        <label for="black">Black</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="red" name="red" value="Red">
+                        <label for="red">Red</label>
+                    </span>
+                    <span>
+                        <input type="checkbox" id="blue" name="blue" value="Blue">
+                        <label for="blue">Blue</label>
+                    </span>
+            </div>
+            <div class="form_question">
+                <label for="comments" id="comments-label" class="field-label" >Additional comments:</label>
+                <textarea name="comments" id="comments" class="field" cols="30" rows="1"></textarea>
+            </div>
+            <div class="form_question">
+                <input type="submit" id="submit">
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
